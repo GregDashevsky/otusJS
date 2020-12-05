@@ -13,10 +13,14 @@ console.log((c + d).length);
 // #3 Написать программу, которая запрашивает у пользователя ввод трёхзначного числа, 
 //а потом выводит в консоль сумму цифр введённого числа.
 const userInput = prompt('Введите трёхзначное число: ');
-let arr0 = userInput.split('');
-let userSum = 0;
-for (i = 1; i <= arr0.length;) {
-   let numArr = +arr0.pop();
-   userSum = userSum + numArr;
+
+function amount(a) {
+   let arr0 = a.split('');
+   let userSum = 0;
+   for (i = 1; i <= arr0.length;) {
+      let numArr = +arr0.pop();
+      userSum = userSum + numArr;
+   }
+   return userSum;
 }
-console.log('Сумма введённых чисел: ' + userSum);
+console.log('Сумма введённых чисел: ' + amount(userInput));
