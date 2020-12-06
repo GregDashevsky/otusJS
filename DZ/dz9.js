@@ -24,7 +24,7 @@ console.log(answer);
 // Написать программу, которая выведет в консоль длину окружности
 // и площадь круга с радиусом R.
 
-const userRad = prompt('Введите радиус: ');
+const userRad = prompt("Введите радиус: ");
 
 function circumference(r) {
   result = 2 * Math.PI * r;
@@ -56,14 +56,14 @@ function roots(a, b, c) {
   const d = Math.pow(b, 2) - 4 * a * c;
   let solution = {};
   console.log(a, b, c, d); //
-  console.log(typeof (a), typeof (b), typeof (c), typeof (d)); //
+  console.log(typeof a, typeof b, typeof c, typeof d); //
   if (d == 0) {
     solution = (-b + Math.sqrt(d)) / (2 * a);
   } else if (d > 0) {
     const tempArr = [];
-    tempArr.push(((-b + Math.sqrt(d)) / (2 * a)));
-    tempArr.push(((-b - Math.sqrt(d)) / (2 * a)));
-    solution['Квадратные корни: '] = tempArr;
+    tempArr.push((-b + Math.sqrt(d)) / (2 * a));
+    tempArr.push((-b - Math.sqrt(d)) / (2 * a));
+    solution["Квадратные корни: "] = tempArr;
     // } else {
     //     solution = "Нет корней";
     // }

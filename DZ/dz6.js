@@ -15,7 +15,7 @@ diff(10, 6);
 // Функция возвращает true, если строка состоит из одного слова и false, если из нескольких.
 function isWord(str) {
   let x;
-  const testArr = str.split(' ');
+  const testArr = str.split(" ");
   if (testArr.length === 1) {
     x = true;
   } else {
@@ -23,7 +23,7 @@ function isWord(str) {
   }
   console.log(x);
 }
-const userInput = prompt('Введите одно слово или несколько: ');
+const userInput = prompt("Введите одно слово или несколько: ");
 isWord(userInput);
 
 // #3 Напишите функциюpow(a, x), которая вернёт значение числа a, возведённого в степень x.

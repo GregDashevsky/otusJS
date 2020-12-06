@@ -6,18 +6,18 @@ console.log(a * b, a + b);
 
 // #2 Вдвух переменных хранятся строки символов.
 // Написать программу, которая выведет в консоль суммарное количество символов в обоих строках.
-const c = '12sdf';
-const d = 'a8v';
+const c = "12sdf";
+const d = "a8v";
 console.log((c + d).length);
 
 // #3 Написать программу, которая запрашивает у пользователя ввод трёхзначного числа,
 // а потом выводит в консоль сумму цифр введённого числа.
-const userInput = prompt('Введите трёхзначное число: ');
+const userInput = prompt("Введите трёхзначное число: ");
 
 function amount(a) {
-  const arr0 = a.split('');
+  const arr0 = a.split("");
   let userSum = 0;
-  for (i = 1; i <= arr0.length;) {
+  for (i = 1; i <= arr0.length; ) {
     const numArr = +arr0.pop();
     userSum += numArr;
   }

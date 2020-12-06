@@ -7,14 +7,18 @@ function regTest(input) {
   const date = /\d{4}-\d{2}-\d{2}/;
 
   if (phone.test(input)) {
-    return 'Это номер телефона';
-  } if (email.test(input)) {
-    return 'Это email';
-  } if (date.test(input)) {
-    return 'Это дата';
+    return "Это номер телефона";
   }
-  return 'Не подходит';
+  if (email.test(input)) {
+    return "Это email";
+  }
+  if (date.test(input)) {
+    return "Это дата";
+  }
+  return "Не подходит";
 }
 
-const userInput = prompt('Введите телефон в формате +7(916)111-12-15, или email, или дату в формате 2000-01-01');
+const userInput = prompt(
+  "Введите телефон в формате +7(916)111-12-15, или email, или дату в формате 2000-01-01"
+);
 console.log(regTest(userInput));
